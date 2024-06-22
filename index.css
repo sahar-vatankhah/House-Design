@@ -392,19 +392,15 @@
     left: 35%;
   }
 
- #main-footer h3{
-    padding: 3%;
-    font-size: 1rem;
-}
-
-
-  .container3 {
-    flex-direction: row;
-    justify-content: space-around;
+  .container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: center;
     font-size: 0.7rem;
-  }
+    
+}
 
 
 }
@@ -468,7 +464,15 @@
   .slider-container .action-buttons button {
     left: 35%;
   }
-
+  .container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-size: 0.6rem;
+    
+}
 
 }
 

@@ -130,6 +130,151 @@
     flex: 5;
   }
   
+
+
+
+  .section-large-text {
+    position: relative;
+    background: url("./image/pexels.jpg") bottom center/cover no-repeat;
+    height: 600px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+  }
+  
+  .section-large-text-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+  }
+  
+  .section-large-text-inner h2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+  
+  .section-large-text-inner h3 {
+    font-size: 2rem;
+  }
+  
+  .section-large-text-inner p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+
+
+
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+  }
+  
+  .right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+  .left-slide.top-0 { 
+    top: 0; }
+  .left-slide.top-1 { 
+    top: -100vh; }
+  .left-slide.top-2 { 
+    top: -200vh; }
+  .left-slide.top-3 { 
+    top: -300vh; }
+
+
   
   #main-footer {
     width: 100vw;
@@ -175,28 +320,220 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  @media (max-width: 480px) {
-    .container {
-      width: 100vw;
-    }
-  
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
-      display: none;
-    }
+
+
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    padding: 20px 0;
   }
-   
-  
-  @media (max-width: 480px) {
+
+  .logo {
+    font-size: 2.5rem;
+    margin-left: 2%;
+  }
+
+  .navbar ul li {
+    margin: 0 15px;
+    font-size: 0.8rem;
     
-  
-    .container {
-      width: 100vw; 
-    }
-  
-   
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
-      display: none; 
-    }
   }
+
+  .section {
+    height: 80vh;
+  }
+
+  .panel {
+    height: 60vh;
+    margin: 10px;
+  }
+
+  .panel h2 {
+    font-size: 2rem;
+  }
+
+  .panel.active {
+    flex: 2;
+  }
+
+  .section-large-text{
+    width: 100%;
+  }
+  .section-large-text-inner h2 {
+    font-size: 1.9rem;
+  }
+  
+  .section-large-text-inner h3 {
+    font-size: 0.9rem;
+  }
+  
+  .section-large-text-inner p {
+    font-size: 1rem;
+  }
+
+  .left-slide, .right-slide {
+    width: 70%;
+  }
+  .left-slide h2{
+    font-size: 1.3rem;
+    margin-right: 58%;
+
+  }
+
+  .left-slide p{
+    font-size: 1rem;
+    margin-right: 58%;
+
+  }
+
+
+
+  .slider-container .action-buttons button {
+    left: 35%;
+  }
+
+ #main-footer h3{
+    padding: 3%;
+    font-size: 1rem;
+}
+
+
+  .container3 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-size: 0.7rem;
+  }
+
+
+}
+
+
+@media screen and (min-width: 420px)  and (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .navbar ul li {
+    margin: 0 25px;
+  }
+
+  .section {
+    height: 90vh;
+  }
+
+  .panel {
+    height: 70vh;
+    margin: 15px;
+  }
+
+  .panel h2 {
+    font-size: 4rem;
+  }
+
+  .panel.active {
+    flex: 3;
+  }
+
+  .section-large-text-inner h2 {
+    font-size: 3.5rem;
+  }
+  
+  .section-large-text-inner h3 {
+    font-size: 1.75rem;
+  }
+  
+  .section-large-text-inner p {
+    font-size: 1.25rem;
+  }
+
+  .left-slide, .right-slide {
+    width: 70%;
+  }
+  .left-slide h2{
+    font-size: 1.3rem;
+    margin-right: 58%;
+
+  }
+
+  .left-slide p{
+    font-size: 1rem;
+    margin-right: 58%;
+
+  }
+
+
+
+  .slider-container .action-buttons button {
+    left: 35%;
+  }
+
+
+}
+
+
+@media screen and  (min-width: 768px)  and (max-width: 1024px) {
+  .logo {
+    font-size: 4rem;
+  }
+
+  .navbar ul li {
+    margin: 0 30px;
+  }
+
+  .section {
+    height: 100vh;
+  }
+
+  .panel {
+    height: 80vh;
+    margin: 20px;
+  }
+
+  .panel h2 {
+    font-size: 3.5rem;
+  }
+
+  .panel.active {
+    flex: 4;
+  }
+
+  .section-large-text-inner h2 {
+    font-size: 4.5rem;
+  }
+  
+  .section-large-text-inner h3 {
+    font-size: 2rem;
+  }
+  
+  .section-large-text-inner p {
+    font-size: 1.5rem;
+  }
+
+  .left-slide, .right-slide {
+    width: 70%;
+  }
+  .left-slide h2{
+    font-size: 1.6rem;
+    margin-right: 65%;
+
+  }
+
+  .left-slide p{
+    font-size: 1.3rem;
+    margin-right: 65%;
+
+  }
+
+
+
+  .slider-container .action-buttons button {
+    left: 35%;
+  }
+
+
+}
+
+   
+  
